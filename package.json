@@ -1,0 +1,54 @@
+{
+  "name": "widget-report",
+  "version": "0.0.1",
+  "description": "widget report for open broker",
+  "main": "./src/index.js",
+  "scripts": {
+    "build": "NODE_ENV=production rimraf dist && webpack --mode production",
+    "dev": "NODE_ENV=development webpack-dev-server --mode development --open --watch",
+    "deploy": "NODE_ENV=production gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1ebobski/widget-report.git"
+  },
+  "author": "1ebobski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1ebobski/widget-report/issues"
+  },
+  "homepage": "https://github.com/1ebobski/widget-report#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "autoprefixer": "^9.7.6",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.3",
+    "cssnano": "^4.1.10",
+    "file-loader": "^5.1.0",
+    "gh-pages": "~2.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^6.0.0",
+    "mini-css-extract-plugin": "^0.8.2",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-md5-hash": "0.0.6"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.9.14",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/styles": "^4.9.14",
+    "babel-polyfill": "^6.26.0",
+    "core-js": "^3.6.5",
+    "material-table": "^1.57.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
